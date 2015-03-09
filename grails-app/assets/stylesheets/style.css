@@ -1,0 +1,18 @@
+body {
+  padding-top: 50px;
+}
+.main-body {
+  padding-top: 50px;
+  border-bottom: 3px solid #333;
+}
+
+.notey {
+	padding: 15px;
+	background-color: #f5f5f5;
+	border-radius: 4px;
+}
+
+.big-margin {
+	margin-top: 40px;
+	padding-top: 10px;
+}
