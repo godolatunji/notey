@@ -5,7 +5,7 @@
 	<head>
 		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'note.label', default: 'Note')}" />
-		<title>Create A Note</title>
+		<title>Show Note</title>
 	</head>
 	<body>
 		<div class="container">
@@ -23,7 +23,7 @@
 			<div class="big-margin">
 				<h2>${note.title }</h2>
 				<blockquote>
-					<p>${note.content }</p>
+					${raw(note.content) }
 				</blockquote>
 			</div>
 		</div>

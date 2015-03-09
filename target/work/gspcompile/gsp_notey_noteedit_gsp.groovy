@@ -30,30 +30,32 @@ invokeTag('captureHead','sitemesh',8,[:],1)
 printHtmlPart(3)
 createTagBody(1, {->
 printHtmlPart(4)
-if(true && (flash.message)) {
+expressionOut.print(createLink(uri: '/home'))
 printHtmlPart(5)
-expressionOut.print(flash.message)
+if(true && (flash.message)) {
 printHtmlPart(6)
-}
+expressionOut.print(flash.message)
 printHtmlPart(7)
-expressionOut.print(createLink(params: [id:note.id], uri: '/notes/update'))
+}
 printHtmlPart(8)
-expressionOut.print(note.id)
+expressionOut.print(createLink(params: [id:note.id], uri: '/notes/update'))
 printHtmlPart(9)
-expressionOut.print(note.title)
+expressionOut.print(note.id)
 printHtmlPart(10)
-expressionOut.print(note.content)
+expressionOut.print(note.title)
 printHtmlPart(11)
-})
-invokeTag('captureBody','sitemesh',34,[:],1)
+expressionOut.print(note.content)
 printHtmlPart(12)
+})
+invokeTag('captureBody','sitemesh',37,[:],1)
+printHtmlPart(13)
 }
 public static final Map JSP_TAGS = new HashMap()
 protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1425846887105L
+public static final long LAST_MODIFIED = 1425881213059L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'html'

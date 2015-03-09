@@ -25,7 +25,7 @@
 				</div>
 				<div class="form-group">
 					<label for="content">Content: </label>
-					<textarea name="content" class="form-control" placeholder="Enter note contents" rows="15">${note.content }</textarea>
+					<ckeditor:editor height="400px" width="100%" name="content">${note.content }</ckeditor:editor>
 				</div>
 				<button type="submit" class="btn btn-primary">Save Note</button>
 			</form>

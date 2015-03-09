@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
+		
 		<g:set var="entityName" value="${message(code: 'note.label', default: 'Note')}" />
 		<title>Create A Note</title>
 	</head>

@@ -41,9 +41,9 @@ expressionOut.print(createLink(params: [id: note.id], uri: '/notes/show/'))
 printHtmlPart(10)
 expressionOut.print(note)
 printHtmlPart(11)
-expressionOut.print(note.dateCreated)
-printHtmlPart(12)
 expressionOut.print(note.lastUpdated)
+printHtmlPart(12)
+expressionOut.print(note.dateCreated)
 printHtmlPart(13)
 expressionOut.print(createLink(params: [id: note.id], uri: '/notes/edit/'))
 printHtmlPart(14)
@@ -60,7 +60,7 @@ protected void init() {
 	this.jspTags = JSP_TAGS
 }
 public static final String CONTENT_TYPE = 'text/html;charset=UTF-8'
-public static final long LAST_MODIFIED = 1425842330677L
+public static final long LAST_MODIFIED = 1425880823966L
 public static final String EXPRESSION_CODEC = 'html'
 public static final String STATIC_CODEC = 'none'
 public static final String OUT_CODEC = 'html'
